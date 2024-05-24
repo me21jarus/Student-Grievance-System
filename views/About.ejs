@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  <style>
+    
+
+    .logo {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0px;
+    }
+
+    a {
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: rgb(37, 47, 227);
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 200px;
+
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+
+
+    .team {
+      text-align: center;
+
+
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+      margin-bottom: 25px;
+      padding: 0 15px;
+      margin-top: 100px;
+
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.2);
+      margin: 8px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #ffffff;
+      color: rgb(8, 8, 8);
+    }
+
+    .container {
+      padding: 0 30px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+/* 
+    @media screen and (max-width: 650px) {
+      .column {
+        display: block;
+      }
+    } */
+
+    .linkdin {
+      margin-left: 30px;
+      align-items: center;
+      width: 25px;
+    }
+  </style>
+</head>
+
+<body style="margin-top: 0;"> 
+
+  <div class="logo">
+    <div class="c1">
+      <img src="/download.png" alt="logo">
+    </div>
+    <div class="c2">
+      <a href="">Home</a>
+      <!-- <a href="">About</a> -->
+      <a href="">Contact Us</a>
+      <!-- <button onclick="myFunction()"><img src="/moon.png" alt="Mode" width="20px"></button> -->
+    </div>
+  </div>
+  <div class="about-section">
+    <h1>About Us Page</h1>
+
+  </div>
+
+  <h2 class="team">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+        <div class="container">
+          <h2>ADITYA T B</h2>
+          <p>MSRIT BANGALORE</p>
+          <p class="title">1MS21IS0</p>
+          <!-- <img src="linkedin.png" class="linkdin"> -->
+          <a href=""><img src="linkedin.png.jpg" class="linkdin"></a>
+          <a href=""><img src="github.png.jpg" class="linkdin"></a>
+          <a href=""><img src="/twitter.png" class="linkdin"></a>
+
+          <!-- <p><button class="button">Contact</button></p> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <!-- <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> -->
+        <div class="container">
+          <h2>SATHWIK SHETTY</h2>
+          <p>MSRIT BANGALORE</p>
+          <p class="title">1MS21IS087</p>
+          <!-- <img src="linkedin.png.jpg" class="linkdin"> -->
+          <a href=""><img src="linkedin.png.jpg" class="linkdin"></a>
+          <a href=""><img src="github.png.jpg" class="linkdin"></a>
+          <a href=""><img src="/twitter.png" class="linkdin"></a>
+
+          <!-- <p><button class="button">Contact</button></p> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <!-- <img src="/w3images/team3.jpg" alt="John" style="width:100%"> -->
+        <div class="container">
+          <h2>SURAJ E M</h2>
+          <p class="title">1MS21IS108</p>
+          <p>MSRIT BANGALORE</p>
+          <a href=""><img src="linkedin.png.jpg" class="linkdin"></a>
+          <a href=""><img src="github.png.jpg" class="linkdin"></a>
+          <a href=""><img src="/twitter.png" class="linkdin"></a>
+          <!-- <p><button class="button">Contact</button></p> -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="row">
+        <div class="card">
+          <!-- <img src="/w3images/team3.jpg" alt="John" style="width:100%"> -->
+          <div class="container">
+            <h2>GAGAN SHETTY</h2>
+            <p class="title">1MS22IS403</p>
+            <p>MSRIT BANGALORE</p>
+
+            <a href="https://www.linkedin.com/in/gagan-shetty-26bac65222a"><img src="linkedin.png.jpg"
+                class="linkdin"></a>
+            <a href="https://github.com/Gaganshetty123"><img src="github.png.jpg" class="linkdin"></a>
+            <a href=""><img src="/twitter.png" class="linkdin"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

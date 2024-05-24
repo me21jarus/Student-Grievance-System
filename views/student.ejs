@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grivence </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+        }
+
+
+
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(208, 0, 255);
+            text-decoration: underline;
+
+
+        }
+
+        .title-wrapper {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+
+        .action-wrapper {
+            display: flex;
+            justify-content: center;
+            background-color: #C4D7B2;
+            margin: 0 0px;
+            padding: 100px;
+        }
+
+        .input-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 20%
+        }
+
+        input,
+        button {
+            text-align: center;
+            margin: 5px 0;
+            height: 30px;
+            width: 80%;
+            margin: 10px;
+        }
+
+        button {
+            background-color: darkcyan;
+            border-color: darkcyan;
+            color: #C4D7B2;
+            border-width: 5px;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        button:hover {
+            background-color: blue;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+
+        .contact {
+            background-color: #606C5D;
+            padding: 100px;
+
+        }
+
+        .heading {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title-wrapper">
+        <div class="logo">
+            <img src="/download.png" alt="Ramaiah Logo">
+        </div>
+        <!-- <div>
+            <a href="/complent">Home</a>
+            <a href="/About">About</a>
+            <a href="/Contact">Contact</a>
+        </div> -->
+    </div>
+
+
+<body>
+    <h1>complaint Details</h1>
+
+    <% tasks.forEach(function(items){ %>
+        <div> 
+            <h2><%=items.desc%></h2>
+            <form action="/review" method="post">
+                <button value="<%=items.id%>" name="rev">Review</button>
+            </form>
+        </div>
+    <% }) %>
+   
+</body>
+</html>

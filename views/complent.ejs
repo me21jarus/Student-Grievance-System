@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main menu</title>
+    <style>
+        .logo {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0px;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(205, 32, 32);
+        }
+
+        .container {
+            display: grid;
+            text-align: center;
+            grid-template-columns: 2fr 2fr;
+            /* background-color: #FAF0E4; */
+            background-color: white;
+            /* border-radius: 20px; */
+/* background: #e0e0e0;
+box-shadow:  25px 25px 50px #929292,
+             -25px -25px 50px #ffffff; */
+        }
+
+        .boxes {
+            text-align: center;
+            height: 170px;
+            width: 300px;
+            background-color: #dad4fc;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            padding: 5px;
+            border-radius: 53px;
+background: white;
+box-shadow:  22px 22px 45px hsl(240, 2%, 66%),
+             -22px -22px 45px #f8f8f8;
+        }
+
+        #first {
+            margin-right: 300px;
+            margin-left: 250px;
+        }
+
+        #third {
+            margin-right: 300px;
+            margin-left: 250px;
+        }
+
+        .boxes:hover {
+            text-decoration: none;
+            background: #a6e6ec;
+            box-shadow: 0 5px 15px rgba(15, 88, 17, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .line {
+            background: #eeeef0;
+        }
+
+        .event {
+            width: 60%;
+            height: 180px;
+            margin-left: 300px;
+            padding: 10px;
+            /* border: 2px solid red; */
+            color: rgb(237, 54, 22);
+            border-radius: 10px;
+            /* background-color: #B799FF; */
+            margin-bottom: 50px;
+        }
+
+        .bg {
+            background-color: white;
+        }
+
+        .notes {
+            text-align: center;
+        }
+
+        .drive {
+            text-align: center;
+            /* display: inline-block; */
+            /* border: 2px solid red; */
+            padding: 10px;
+            margin: 10p x;
+            background-color:white;
+        }
+
+        .c2 {
+            padding: 40px;
+            font-size: large;
+            /* border: 2px solid red; */
+                /* background-color: #000000;
+                color: #ffffff; */
+
+            #demoFont {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                letter-spacing: 0px;
+                word-spacing: 6px;
+                
+                font-weight: 400;
+                text-decoration: none;
+                font-style: normal;
+                font-variant: normal;
+                text-transform: none;
+                
+            }
+
+        }
+    </style>
+
+       
+</head>
+
+<body>
+
+    <div class="logo">
+        <div class="c1">
+            <img src="/download.png" alt="logo">
+        </div>
+        <div class="c2">
+            <a href="/complent">Home</a>
+            <a href="/contact">contact</a>
+            <a href="/About">About</a>
+        </div>
+    </div>
+
+
+    <marquee class="line" onmouseover="this.stop();" onmouseout="this.start();">
+        3rd Sem Results!!! <a href="https://exam.msrit.edu/">Click here</a>
+        Events in College!!! <a href="https://www.msrit.edu/events.html">Click here</a>
+        Notes!!! <a href="">Click here</a>
+    </marquee>
+    <h2 style="text-decoration: underline;">EVENTS</h2>
+        <div class="event">
+            <marquee class="line" onmouseover="this.stop();" onmouseout="this.start();">
+                <hr>
+                <strong>CHECK HERE FOR LATEST COLLEGE NEWS</strong><a href="">Click here</a>
+                <hr>
+                RESULTS OF 3RD SEMESTER<a href="https://exam.msrit.edu/">Click here</a><br>
+                <hr>
+                ODYSSEY 2023!!!<a
+                    href="https://drive.google.com/file/d/16fKuZ5DyfMSC9IcIXZPICNrwTkpFsZc7/view?usp=sharing">Click
+                    here</a><br>
+                <hr>
+                TECHNICAL TALK<a
+                    href="https://drive.google.com/file/d/1e5kSAYhjehKcZQTFKhDdyoOrsxxMlrem/view?usp=sharing">Click
+                    here</a><br>
+                <hr>
+                STAFF DEVELOPMENT 2.0 PROGRAMME<a
+                    href="https://drive.google.com/file/d/1e5kSAYhjehKcZQTFKhDdyoOrsxxMlrem/view?usp=sharing">Click
+                    here</a><br>
+                <hr>
+            </marquee>
+        </div>
+    <form action="" method="post">
+    <div class="container">
+        
+        <div class="boxes" id="first"><a href="/maintance"  name="maintainence"><h2>Maintainence</h2></a></div>
+        <div class="boxes" id="second"><a href="/academics" name="academics"><h2>Academics</h2></a></div>
+        <div class="boxes" id="third"><a href="/ragging" name="ragging"><h2>Ragging</h2></a></div>
+        <div class="boxes" id="fourth"><a href="/letter" name="letter"><h2>Letter</h2></a></div>
+        
+    </div>
+</form>
+
+<div class="notes">
+    <h2 style="text-decoration: underline;">NOTES</h2>
+    <label for="Semester">Semester</label>
+    <select name="Sem" id="Sem">
+        <option value="A">I</option>
+        <option value="B">II</option>
+        <option value="C">III</option>
+        <option value="C" selected>IV</option>
+        <option value="C">V</option>
+        <option value="C">VI</option>
+        <option value="C">VII</option>
+        <option value="C">VIII</option>
+    </select><br>
+    <br>
+    <label for="Branch">Branch</label>
+    <select name="Br" id="Br">
+        <option value="A">CSE</option>
+        <option value="B" selected>ISE</option>
+        <option value="C">ECE</option>
+    </select>
+    <br>
+    <br>
+</div>
+<div class="drive">
+    IS41<a href="">Click here</a><br><br>
+    IS42<a href="">Click here</a><br><br>
+    IS43<a href="">Click here</a><br><br>
+    IS44<a href="">Click here</a><br><br>
+    IS45<a href="">Click here</a><br><br>
+</div>
+
+
+</body>
+
+</html>

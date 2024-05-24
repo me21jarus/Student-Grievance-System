@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letter</title>
+    <style>
+            .logo {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px 0px;
+            }
+
+            a {
+                text-decoration: none;
+                margin: 10px;
+            }
+
+            a:hover {
+                text-decoration: line-through;
+                color: purple;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+            }
+            .pro{
+                text-align: center;
+            }
+            .sub{
+                height: 30px;
+                width: 300px;
+                border-radius: 7px;
+                text-align: center;
+            }
+            
+            .des{
+            width: 400px;
+            height: 150px;
+            text-align: center;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="c1">
+            <img src="/download.png" alt="logo">
+        </div>
+        <div class="c2">
+            <a href="/complent">Home</a>
+            <a href="/About">About</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+    <h1>Leave Letter</h1>
+    <br>
+    <div class="pro">
+        <label for="pro">To:</label>
+        <select name="pro" id="pro">
+            <option value="pro">Proctor</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="date">Date:</label>
+        <input type="date">
+        <br>
+        <br>
+
+        <input class="sub" type="textarea" placeholder="Subject">
+        <br><br>
+
+        <input class="des" type="textarea" placeholder="Description">
+        <br><br>
+
+        
+        <label class="sub" for="Proof">Proof:</label>
+        <input type="file">
+        <br>
+        <br>
+
+        <input class="sub" type="submit" value="Submit">
+    </div>
+</body>
+</html>

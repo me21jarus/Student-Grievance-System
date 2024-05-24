@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintainence</title>
+    <style>
+        /* body{
+            background-image: url(/bgimg.jpg);
+            background-repeat: no-repeat;
+        } */
+        .logo {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0px;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        a:hover {
+            text-decoration: line-through;
+            color: purple;
+        }
+
+        h2 {
+            text-decoration: underline;
+            text-align: center;
+        }
+        input{
+            margin: 10px;
+            border-radius: 7px;
+            text-align: center;
+        }
+        .order{
+            text-align: center;
+        }
+        .size{
+            text-align: center;
+            margin-left: 0px;
+            width: 400px;
+            height: 200px;
+        }
+        /* .proof{
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <div class="c1">
+            <img src="/download.png" alt="logo">
+        </div>
+        <div class="c2">
+            <a href="/complent">Home</a>
+            <a href="/About">About</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+    <header>
+        <h2>Please Fill The Form To Address Your Complaint With Appropriate Proof</h2>
+    </header>
+    <form class="order" action="/maintance" method="post">
+        <div><input  type="text" placeholder="Name" autofocus name="Name"></div>
+        <div><input  type="text" placeholder="Department" name="Depart"></div>
+        <div><input  type="text" placeholder="Sem" name="Sem"></div>
+    <div><input type="textarea" placeholder="Description" class="size" name="Desc"></div>
+    
+
+    <!-- <div  class="order"> -->
+    <!-- <label for="Proof">Proof:</label> -->
+        <!-- <input type="file">
+        <br>
+        <br>
+    </div> -->
+
+
+    <div class="order"><input type="submit" value="Submit"></div>
+</form>
+</body>
+
+</html>
